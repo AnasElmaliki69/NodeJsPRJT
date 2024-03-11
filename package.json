@@ -1,0 +1,15 @@
+{
+  "name": "isitech2324b2devnode",
+  "version": "1.0.0",
+  "description": "premier tp node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "elmaliki anas",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
