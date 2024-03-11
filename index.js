@@ -1,6 +1,6 @@
 
 
-import { divide as test, add, substract } from "./math";
+import { divide as test, add, substract } from "./math.js";
 
 const divide = () => "Fake";
 const a = 45;
