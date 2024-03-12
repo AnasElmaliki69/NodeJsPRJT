@@ -19,26 +19,26 @@ function findHighest(table) {
 }
 
 
-let numbers = [15, 15];
+let numbers = [15, 1515];
 console.log(findHighest(numbers)); 
 
 
 
 // 3 Écrivez une fonction qui prend une chaîne de caractères et renvoie une nouvelle chaîne de caractères dont toutes les voyelles ont été supprimées.
 
-function extractVowels(inputString) {
+function extractvoyelles(inputString) {
 
-    const vowelRegex = /[aeiou]/gi;
-    const vowelsArray = inputString.match(vowelRegex);
-    const vowelsString = vowelsArray ? vowelsArray.join("") : "";
-    return vowelsString;
+    const voyellesRegex = /[aeiou]/gi;
+    const voyellesArray = inputString.match(voyellesRegex);
+    const voyellesString = voyellesArray ? voyellesArray.join("") : "";
+    return voyellesString;
 }
 const input = "EL MALIKI Anas"; 
-console.log(extractVowels(input));
+console.log(extractvoyelles(input));
 
 
 // 4 Écrivez une fonction qui prend un tableau de chaînes de caractères et renvoie un tableau de chaînes de caractères triées par ordre alphabétique.
-function trierParOrdreAlphabétique(tableau) {
+export function trierParOrdreAlphabétique(tableau) {
     return tableau.sort(function(a, b) {
         const chaineA = a.toLowerCase();
         const chaineB = b.toLowerCase();
@@ -155,7 +155,7 @@ console.log("Nombre de voyelles dans la chaîne:", compterVoyelles(chaineTest));
 // 10 Écrivez une fonction qui prend une chaîne de caractères et renvoie une nouvelle chaîne avec toutes les consonnes en majuscules.
 
 
-function majusculesConsonnes(chaine) {
+export function majusculesConsonnes(chaine) {
     const consonnes = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
     let nouvelleChaine = '';
 

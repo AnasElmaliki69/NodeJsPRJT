@@ -1,9 +1,27 @@
+import http from "http";
+import fs from "fs"; // file system
 
+const server = http.createServer((req, res) => {
+  const url = req.url;
+  const method = req.method;
 
-import { divide as test, add, substract } from "./math.js";
+  if (url === "/") {
+    res.write("<html>");
+    res.write("<head><title>Enter Message</title><head>");
+    res.write(
+      '<body> <form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>'
+    );
+    res.write("</html>");
+    return res.end();
+  }
 
-const divide = () => "Fake";
-const a = 45;
-const b = 42;
+  if (url === "/message" && method === "POST") {
+    fs.writeFileSync("message.txt", "DUMMY");
+    res.statusCode = 302;
+    res.setHeader("Location", "/");
+    return res.end();
+  }
+});
 
-console.log(divide(a, b));
+// le serveur ecoute sur le port 3000: http://localhost:3000
+server.listen(3000);
