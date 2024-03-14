@@ -1,16 +1,15 @@
 {
-  "name": "isitech2324b2devnode",
+  "name": "nodeprjt",
   "version": "1.0.0",
-  "description": "premier tp node js",
+  "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "elmaliki anas",
-  "license": "MIT",
-  "devDependencies": {
-    "nodemon": "^3.1.0"
+  "author": "elmalikianas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
   }
 }
